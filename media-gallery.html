@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Gallery - Dhananjaya Laminates</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Dancing+Script:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        .media-gallery-section {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        }
+
+        .media-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .media-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 25px;
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        .media-header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        .media-header p {
+            font-size: 1.2rem;
+            color: #6c757d;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .video-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .video-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 250px;
+            overflow: hidden;
+        }
+
+                 .video-container iframe {
+             width: 100%;
+             height: 100%;
+             border-radius: 15px 15px 0 0;
+         }
+
+        .video-info {
+            padding: 25px;
+        }
+
+        .video-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .video-description {
+            color: #6c757d;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .video-meta {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-size: 0.9rem;
+            color: #8e9aaf;
+        }
+
+        .video-meta i {
+            margin-right: 5px;
+        }
+
+        .back-to-home {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .back-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .video-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .media-header h1 {
+                font-size: 2rem;
+            }
+
+            .video-container {
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-left">
+                    <ul class="nav-menu">
+                        <li><a href="index.html" class="nav-link">HOME</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="nav-link">PRODUCTS <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="mdf.html">MDF</a></li>
+                                <li><a href="hdf.html">HDF</a></li>
+                                <li><a href="hdhwr.html">HDHWR</a></li>
+                                <li><a href="prelam.html">PRE LAM/MELAMINE</a></li>
+                                <li><a href="laminates.html">LAMINATES</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="nav-link">CONTACT US</a></li>
+                    </ul>
+                </div>
+                <div class="nav-center">
+                    <div class="logo">
+                        <img src="IMG-20250125-WA0009-removebg-preview (1).png" alt="Dhananjaya Laminates Logo" class="logo-image">
+                    </div>
+                </div>
+                <div class="nav-right">
+                    <ul class="nav-menu">
+                        <li><a href="media-gallery.html" class="nav-link active">MEDIA GALLERY</a></li>
+                        <li><a href="#" class="nav-link">E CATALOGUE</a></li>
+                    </ul>
+                    <div class="nav-tools">
+                        <div class="search-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Media Gallery Section -->
+    <section class="media-gallery-section">
+        <div class="container">
+            <div class="media-header" data-aos="fade-up">
+                <div class="media-badge">
+                    <span class="badge-icon">🎬</span>
+                    <span class="badge-text">Media Gallery</span>
+                </div>
+                <h1>Our Video Collection</h1>
+                <p>Explore our comprehensive collection of videos showcasing our facilities, experience centers, and corporate journey</p>
+            </div>
+
+                         <div class="video-grid">
+                 <div class="video-card" data-aos="fade-up" data-aos-delay="100">
+                     <div class="video-container">
+                         <iframe 
+                             src="https://www.youtube.com/embed/eBAi2DQreRU?si=7-9llvl8a02jmqLl" 
+                             title="Corporate Video - Dhananjaya Laminates"
+                             frameborder="0" 
+                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                             allowfullscreen>
+                         </iframe>
+                     </div>
+                     <div class="video-info">
+                         <h3 class="video-title">Corporate Video</h3>
+                         <p class="video-description">Discover the journey of Dhananjaya Overseas from a local manufacturer to India's largest laminate exporter, serving 80+ countries worldwide.</p>
+                         <div class="video-meta">
+                             <span><i class="fas fa-clock"></i> Corporate</span>
+                             <span><i class="fas fa-globe"></i> Company Overview</span>
+                         </div>
+                     </div>
+                 </div>
+
+                 <div class="video-card" data-aos="fade-up" data-aos-delay="200">
+                     <div class="video-container">
+                         <iframe 
+                             src="https://www.youtube.com/embed/ABXuyO23dWo" 
+                             title="Chennai Experience Center - Dhananjaya Laminates"
+                             frameborder="0" 
+                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                             allowfullscreen>
+                         </iframe>
+                     </div>
+                     <div class="video-info">
+                         <h3 class="video-title">Chennai Experience Center</h3>
+                         <p class="video-description">Take a virtual tour of our state-of-the-art experience center in Chennai, showcasing our latest products and designs.</p>
+                         <div class="video-meta">
+                             <span><i class="fas fa-map-marker-alt"></i> Chennai</span>
+                             <span><i class="fas fa-building"></i> Experience Center</span>
+                         </div>
+                     </div>
+                 </div>
+
+                 <div class="video-card" data-aos="fade-up" data-aos-delay="300">
+                     <div class="video-container">
+                         <iframe 
+                             src="https://www.youtube.com/embed/TxfPX89rd_k" 
+                             title="Bangalore Experience Center - Dhananjaya Laminates"
+                             frameborder="0" 
+                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                             allowfullscreen>
+                         </iframe>
+                     </div>
+                     <div class="video-info">
+                         <h3 class="video-title">Bangalore Experience Center</h3>
+                         <p class="video-description">Explore our Bangalore experience center and discover how we bring innovation and quality to South India.</p>
+                         <div class="video-meta">
+                             <span><i class="fas fa-map-marker-alt"></i> Bangalore</span>
+                             <span><i class="fas fa-building"></i> Experience Center</span>
+                         </div>
+                     </div>
+                 </div>
+
+                 <div class="video-card" data-aos="fade-up" data-aos-delay="400">
+                     <div class="video-container">
+                         <iframe 
+                             src="https://www.youtube.com/embed/L-gZmSKlsCA" 
+                             title="Delhi Experience Center - Dhananjaya Laminates"
+                             frameborder="0" 
+                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                             allowfullscreen>
+                         </iframe>
+                     </div>
+                     <div class="video-info">
+                         <h3 class="video-title">Delhi Experience Center</h3>
+                         <p class="video-description">Visit our Delhi experience center and witness the perfect blend of tradition and modern innovation in laminate manufacturing.</p>
+                         <div class="video-meta">
+                             <span><i class="fas fa-map-marker-alt"></i> Delhi</span>
+                             <span><i class="fas fa-building"></i> Experience Center</span>
+                         </div>
+                     </div>
+                 </div>
+
+                 <div class="video-card" data-aos="fade-up" data-aos-delay="500">
+                     <div class="video-container">
+                         <iframe 
+                             src="https://www.youtube.com/embed/SU0W02vPPBY?si=vkA6c6YTP99L-8u2" 
+                             title="Manilam At Indiawoods 2024 - Dhananjaya Laminates"
+                             frameborder="0" 
+                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                             allowfullscreen>
+                         </iframe>
+                     </div>
+                     <div class="video-info">
+                         <h3 class="video-title">Manilam At Indiawoods 2024</h3>
+                         <p class="video-description">Relive the excitement of our participation at India Wood 2024, where we showcased our innovative products and celebrated industry achievements.</p>
+                         <div class="video-meta">
+                             <span><i class="fas fa-calendar"></i> Exhibition</span>
+                             <span><i class="fas fa-trophy"></i> Industry Event</span>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+
+            <div class="back-to-home" data-aos="fade-up" data-aos-delay="600">
+                <a href="index.html" class="back-btn">
+                    <i class="fas fa-arrow-left"></i>
+                    <span>Back to Home</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Dhananjaya Laminates</h3>
+                    <p>India's largest laminate manufacturer, trusted by 80+ nations worldwide for quality and innovation.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="mdf.html">MDF</a></li>
+                        <li><a href="hdf.html">HDF</a></li>
+                        <li><a href="hdhwr.html">HDHWR</a></li>
+                        <li><a href="prelam.html">PRE LAM/MELAMINE</a></li>
+                        <li><a href="laminates.html">LAMINATES</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Tools</h4>
+                    <ul>
+                        <li><a href="#">Visualizer</a></li>
+                        <li><a href="#">Dealer Locator</a></li>
+                        <li><a href="#">E-Catalogue</a></li>
+                        <li><a href="#">Design Bar</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Certifications</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Dhananjaya Laminates. All rights reserved. | Made with ❤️ in India</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out',
+            once: true,
+            mirror: false
+        });
+
+        
+    </script>
+</body>
+</html>
