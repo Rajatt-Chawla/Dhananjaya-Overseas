@@ -19,6 +19,15 @@
         }
     </script>
     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script type="text/javascript">
+        // Check if Google Translate loads within 3 seconds, otherwise show fallback
+        setTimeout(function() {
+            if (!document.querySelector('#google_translate_element .goog-te-gadget')) {
+                document.querySelector('.fallback-language-selector').style.display = 'block';
+                document.querySelector('#google_translate_element').style.display = 'none';
+            }
+        }, 3000);
+    </script>
 </head>
 <body>
     <!-- Header Section -->
@@ -38,7 +47,7 @@
                                 <li><a href="laminates.html" class="active">LAMINATES</a></li>
                             </ul>
                         </li>
-                        <li><a href="#" class="nav-link">CONTACT US</a></li>
+                        <li><a href="contact.html" class="nav-link">CONTACT US</a></li>
                     </ul>
                 </div>
                 <div class="nav-center">
@@ -48,12 +57,20 @@
                 </div>
                 <div class="nav-right">
                     <ul class="nav-menu">
-                        <li><a href="#" class="nav-link">MEDIA GALLERY</a></li>
-                        <li><a href="#" class="nav-link">E CATALOGUE</a></li>
+                        <li><a href="media-gallery.html" class="nav-link">MEDIA GALLERY</a></li>
+                        <li><a href="catalogue.html" class="nav-link">E CATALOGUE</a></li>
                     </ul>
                     <div class="nav-tools">
                         <div class="language-selector">
                             <div id="google_translate_element"></div>
+                            <!-- Fallback language selector if Google Translate doesn't load -->
+                            <select class="fallback-language-selector" style="display: none;">
+                                <option value="en">English</option>
+                                <option value="hi">हिंदी</option>
+                                <option value="es">Español</option>
+                                <option value="fr">Français</option>
+                                <option value="ar">العربية</option>
+                            </select>
                         </div>
                         <div class="search-icon">
                             <i class="fas fa-search"></i>
@@ -548,14 +565,25 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Dhananjaya Laminates</h3>
-                    <p>India's largest laminate manufacturer, trusted by 80+ nations worldwide for quality and innovation.</p>
+                <div class="footer-section footer-about">
+                    <div class="footer-logo">
+                        <img src="IMG-20250125-WA0009-removebg-preview (1).png" alt="Dhananjaya Laminates Logo" class="footer-logo-img">
+                        <h3>Dhananjaya Laminates</h3>
+                    </div>
+                    <p>India's largest laminate manufacturer, trusted by 80+ nations worldwide for quality and innovation. Leading the global market with premium quality laminates and wood-based products.</p>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.facebook.com/dhananjayaoverseas" target="_blank" rel="noopener noreferrer" title="Follow us on Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/doplindia" target="_blank" rel="noopener noreferrer" title="Follow us on Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/dhananjaya-overseas" target="_blank" rel="noopener noreferrer" title="Connect with us on LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://x.com/dhananjayavilla" target="_blank" rel="noopener noreferrer" title="Follow us on X (Twitter)">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
                     </div>
                 </div>
                 <div class="footer-section">
@@ -569,27 +597,52 @@
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Tools</h4>
+                    <h4>Resources</h4>
                     <ul>
-                        <li><a href="#">Visualizer</a></li>
+                        <li><a href="catalogue.html">E-Catalogue</a></li>
+                        <li><a href="media-gallery.html">Media Gallery</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
                         <li><a href="#">Dealer Locator</a></li>
-                        <li><a href="#">E-Catalogue</a></li>
-                        <li><a href="#">Design Bar</a></li>
+                        <li><a href="#">Visualizer</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4>Company</h4>
                     <ul>
                         <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Mission</a></li>
+                        <li><a href="#">Certifications</a></li>
                         <li><a href="#">Careers</a></li>
                         <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Certifications</a></li>
                     </ul>
+                </div>
+                <div class="footer-section footer-contact">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Yamuna Nagar, Haryana, India</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 9996083600</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>dhananjayaoverseas@gmail.com</span>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Dhananjaya Laminates. All rights reserved. | Made with ❤️ in India</p>
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 Dhananjaya Laminates. All rights reserved. | Made with ❤️ in India</p>
+                    <div class="footer-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Cookie Policy</a>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
