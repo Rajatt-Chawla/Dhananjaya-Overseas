@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Catalogue - Dhananjaya Laminates</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Dancing+Script:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'en,hi,es,fr,ar',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                autoDisplay: false
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script type="text/javascript">
+        // Check if Google Translate loads within 3 seconds, otherwise show fallback
+        setTimeout(function() {
+            if (!document.querySelector('#google_translate_element .goog-te-gadget')) {
+                document.querySelector('.fallback-language-selector').style.display = 'block';
+                document.querySelector('#google_translate_element').style.display = 'none';
+            }
+        }, 3000);
+    </script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-left">
+                    <ul class="nav-menu">
+                        <li><a href="index.html" class="nav-link">HOME</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="nav-link">PRODUCTS <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="mdf.html">MDF</a></li>
+                                <li><a href="hdf.html">HDF</a></li>
+                                <li><a href="hdhwr.html">HDHWR</a></li>
+                                <li><a href="prelam.html">PRE LAM/MELAMINE</a></li>
+                                <li><a href="laminates.html">LAMINATES</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html" class="nav-link">CONTACT US</a></li>
+                    </ul>
+                </div>
+                <div class="nav-center">
+                    <div class="logo">
+                        <img src="IMG-20250125-WA0009-removebg-preview (1).png" alt="Dhananjaya Laminates Logo" class="logo-image">
+                    </div>
+                </div>
+                <div class="nav-right">
+                    <ul class="nav-menu">
+                        <li><a href="media-gallery.html" class="nav-link">MEDIA GALLERY</a></li>
+                        <li><a href="catalogue.html" class="nav-link active">E CATALOGUE</a></li>
+                    </ul>
+                    <div class="nav-tools">
+                        <div class="language-selector">
+                            <div id="google_translate_element"></div>
+                            <!-- Fallback language selector if Google Translate doesn't load -->
+                            <select class="fallback-language-selector" style="display: none;">
+                                <option value="en">English</option>
+                                <option value="hi">हिंदी</option>
+                                <option value="es">Español</option>
+                                <option value="fr">Français</option>
+                                <option value="ar">العربية</option>
+                            </select>
+                        </div>
+                        <div class="search-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Catalogue Hero Section -->
+    <section class="catalogue-hero-section">
+        <div class="catalogue-hero-background">
+            <div class="catalogue-hero-bg-image" style="background-image: url('Banner 1.jpg')"></div>
+            <div class="catalogue-hero-overlay"></div>
+        </div>
+        
+        <div class="catalogue-hero-content">
+            <div class="container">
+                <div class="catalogue-hero-text" data-aos="fade-up">
+                    <div class="catalogue-hero-badge">
+                        <span class="badge-icon">📚</span>
+                        <span class="badge-text">Digital Catalogues</span>
+                    </div>
+                    
+                    <h1 class="catalogue-hero-title">
+                        <span class="title-line">Explore Our</span>
+                        <span class="title-line highlight">Product Catalogues</span>
+                        <span class="title-line">Online</span>
+                    </h1>
+                    
+                    <p class="catalogue-hero-description">
+                        Discover our comprehensive range of premium laminates and wood-based products through our interactive digital catalogues. Download, browse, and explore our latest collections.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search and Filter Section -->
+    <section class="catalogue-search-section">
+        <div class="container">
+            <div class="search-filter-container" data-aos="fade-up">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="catalogueSearch" placeholder="Search catalogues by name, product, or category...">
+                </div>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All Catalogues</button>
+                    <button class="filter-btn" data-filter="laminates">Laminates</button>
+                    <button class="filter-btn" data-filter="manilam">Manilam Series</button>
+                    <button class="filter-btn" data-filter="jaguar">Jaguar Series</button>
+                    <button class="filter-btn" data-filter="technical">Technical Specs</button>
+                    <button class="filter-btn" data-filter="architectural">Architectural</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Catalogues Section -->
+    <section class="featured-catalogues-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <div class="header-badge">
+                    <span class="badge-icon">⭐</span>
+                    <span class="badge-text">Featured Catalogues</span>
+                </div>
+                <h2>Latest Product Collections</h2>
+                <p>Explore our newest and most popular product catalogues</p>
+            </div>
+
+            <div class="featured-catalogues-grid">
+                <div class="catalogue-card featured" data-aos="fade-up" data-aos-delay="100" data-category="laminates">
+                    <div class="catalogue-preview">
+                        <div class="catalogue-thumbnail">
+                            <i class="fas fa-file-pdf"></i>
+                            <div class="catalogue-overlay">
+                                <button class="preview-btn" onclick="previewCatalogue('Chromatic Tales solid interactive pdf new.pdf')">
+                                    <i class="fas fa-eye"></i>
+                                    Preview
+                                </button>
+                            </div>
+                        </div>
+                        <div class="catalogue-badge">New</div>
+                    </div>
+                    <div class="catalogue-info">
+                        <div class="catalogue-category">Laminates</div>
+                        <h3>Chromatic Tales - Solid Interactive</h3>
+                        <p>Explore our vibrant solid color collection with interactive features. Features 100+ solid colors in various finishes including glossy, matte, and textured options.</p>
+                        <div class="catalogue-features">
+                            <span class="feature-tag">100+ Colors</span>
+                            <span class="feature-tag">Interactive</span>
+                            <span class="feature-tag">Multiple Finishes</span>
+                        </div>
+                        <div class="catalogue-actions">
+                            <a href="Chromatic Tales solid interactive pdf new.pdf" download class="download-btn">
+                                <i class="fas fa-download"></i>
+                                Download PDF
+                            </a>
+                            <button class="share-btn" onclick="shareCatalogue('Chromatic Tales solid interactive pdf new.pdf')">
+                                <i class="fas fa-share"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="catalogue-card featured" data-aos="fade-up" data-aos-delay="200" data-category="manilam">
+                    <div class="catalogue-preview">
+                        <div class="catalogue-thumbnail">
+                            <i class="fas fa-file-pdf"></i>
+                            <div class="catalogue-overlay">
+                                <button class="preview-btn" onclick="previewCatalogue('MANILAM 1MM 15-4-24 new interactive pdf.pdf')">
+                                    <i class="fas fa-eye"></i>
+                                    Preview
+                                </button>
+                            </div>
+                        </div>
+                        <div class="catalogue-badge">Popular</div>
+                    </div>
+                    <div class="catalogue-info">
+                        <div class="catalogue-category">Manilam Series</div>
+                        <h3>Manilam 1MM - Interactive Collection</h3>
+                        <p>Premium 1mm thick laminates with enhanced durability and finish. Perfect for high-traffic areas with superior scratch and stain resistance.</p>
+                        <div class="catalogue-features">
+                            <span class="feature-tag">1MM Thickness</span>
+                            <span class="feature-tag">Durable</span>
+                            <span class="feature-tag">Interactive</span>
+                        </div>
+                        <div class="catalogue-actions">
+                            <a href="MANILAM 1MM 15-4-24 new interactive pdf.pdf" download class="download-btn">
+                                <i class="fas fa-download"></i>
+                                Download PDF
+                            </a>
+                            <button class="share-btn" onclick="shareCatalogue('MANILAM 1MM 15-4-24 new interactive pdf.pdf')">
+                                <i class="fas fa-share"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="catalogue-card featured" data-aos="fade-up" data-aos-delay="300" data-category="jaguar">
+                    <div class="catalogue-preview">
+                        <div class="catalogue-thumbnail">
+                            <i class="fas fa-file-pdf"></i>
+                            <div class="catalogue-overlay">
+                                <button class="preview-btn" onclick="previewCatalogue('Jaguar Catalogue Final 27-05-24-compressed.pdf')">
+                                    <i class="fas fa-eye"></i>
+                                    Preview
+                                </button>
+                            </div>
+                        </div>
+                        <div class="catalogue-badge">Premium</div>
+                    </div>
+                    <div class="catalogue-info">
+                        <div class="catalogue-category">Jaguar Series</div>
+                        <h3>Jaguar Premium Collection</h3>
+                        <p>Luxury laminates with exceptional quality and design. Features premium wood grains, stone textures, and metallic finishes for sophisticated interiors.</p>
+                        <div class="catalogue-features">
+                            <span class="feature-tag">Premium Quality</span>
+                            <span class="feature-tag">Luxury Designs</span>
+                            <span class="feature-tag">Metallic Finishes</span>
+                        </div>
+                        <div class="catalogue-actions">
+                            <a href="Jaguar Catalogue Final 27-05-24-compressed.pdf" download class="download-btn">
+                                <i class="fas fa-download"></i>
+                                Download PDF
+                            </a>
+                            <button class="share-btn" onclick="shareCatalogue('Jaguar Catalogue Final 27-05-24-compressed.pdf')">
+                                <i class="fas fa-share"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- All Catalogues Section -->
+    <section class="all-catalogues-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Complete Catalogue Collection</h2>
+                <p>Browse through our entire range of product catalogues</p>
+            </div>
+
+            <div class="catalogues-grid">
+                <!-- Laminates Category -->
+                <div class="catalogue-card" data-aos="fade-up" data-aos-delay="100" data-category="laminates">
+                    <div class="catalogue-preview">
+                        <div class="catalogue-thumbnail">
+                            <i class="fas fa-file-pdf"></i>
+                            <div class="catalogue-overlay">
+                                <button class="preview-btn" onclick="previewCatalogue('Interactive Manilam 1mm.pdf')">
+                                    <i class="fas fa-eye"></i>
+                                    Preview
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalogue-info">
+                        <div class="catalogue-category">Laminates</div>
+                        <h3>Interactive Manilam 1MM</h3>
+                        <p>Interactive digital catalogue featuring our 1mm Manilam laminates with detailed specifications and design options.</p>
+                        <div class="catalogue-features">
+                            <span class="feature-tag">Interactive</span>
+                            <span class="feature-tag">1MM</span>
+                        </div>
+                        <div class="catalogue-actions">
+                            <a href="Interactive Manilam 1mm.pdf" download class="download-btn">
+                                <i class="fas fa-download"></i>
+                                Download
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="catalogue-card" data-aos="fade-up" data-aos-delay="200" data-category="laminates">
+                    <div class="catalogue-preview">
+                        <div class="catalogue-thumbnail">
+                            <i class="fas fa-file-pdf"></i>
+                            <div class="catalogue-overlay">
+                                <button class="preview-btn" onclick="previewCatalogue('New Catalogue 3 fold.pdf')">
+                                    <i class="fas fa-eye"></i>
+                                    Preview
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalogue-info">
+                        <div class="catalogue-category">Laminates</div>
+                        <h3>New Catalogue 3 Fold</h3>
+                        <p>Compact 3-fold brochure showcasing our latest laminate collections and design trends for 2024.</p>
+                        <div class="catalogue-features">
+                            <span class="feature-tag">3-Fold</span>
+                            <span class="feature-tag">2024 Trends</span>
+                        </div>
+                        <div class="catalogue-actions">
+                            <a href="New Catalogue 3 fold.pdf" download class="download-btn">
+                                <i class="fas fa-download"></i>
+                                Download
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Manilam Series -->
+                <div class="catalogue-card" data-aos="fade-up" data-aos-delay="300" data-category="manilam">
+                    <div class="catalogue-preview">
+                        <div class="catalogue-thumbnail">
+                            <i class="fas fa-file-pdf"></i>
+                            <div class="catalogue-overlay">
+                                <button class="preview-btn" onclick="previewCatalogue('Manilam magnificent 01-3-23.pdf')">
+                                    <i class="fas fa-eye"></i>
+                                    Preview
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalogue-info">
+                        <div class="catalogue-category">Manilam Series</div>
+                        <h3>Manilam Magnificent</h3>
+                        <p>Magnificent collection of Manilam laminates featuring premium designs and superior quality finishes for luxury applications.</p>
+                        <div class="catalogue-features">
+                            <span class="feature-tag">Magnificent</span>
+                            <span class="feature-tag">Premium</span>
+                        </div>
+                        <div class="catalogue-actions">
+                            <a href="Manilam magnificent 01-3-23.pdf" download class="download-btn">
+                                <i class="fas fa-download"></i>
+                                Download
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Door Skin Category -->
+                <div class="catalogue-card" data-aos="fade-up" data-aos-delay="400" data-category="doors">
+                    <div class="catalogue-preview">
+                        <div class="catalogue-thumbnail">
+                            <i class="fas fa-file-pdf"></i>
+                            <div class="catalogue-overlay">
+                                <button class="preview-btn" onclick="previewCatalogue('Door Skin Catalogue new.pdf')">
+                                    <i class="fas fa-eye"></i>
+                                    Preview
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalogue-info">
+                        <div class="catalogue-category">Door Skins</div>
+                        <h3>Door Skin Catalogue</h3>
+                        <p>Comprehensive catalogue of door skin laminates with various wood grains, colors, and finishes for door manufacturing.</p>
+                        <div class="catalogue-features">
+                            <span class="feature-tag">Door Skins</span>
+                            <span class="feature-tag">Wood Grains</span>
+                        </div>
+                        <div class="catalogue-actions">
+                            <a href="Door Skin Catalogue new.pdf" download class="download-btn">
+                                <i class="fas fa-download"></i>
+                                Download
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Architectural Category -->
+                <div class="catalogue-card" data-aos="fade-up" data-aos-delay="500" data-category="architectural">
+                    <div class="catalogue-preview">
+                        <div class="catalogue-thumbnail">
+                            <i class="fas fa-file-pdf"></i>
+                            <div class="catalogue-overlay">
+                                <button class="preview-btn" onclick="previewCatalogue('28.03.25_mega star_ ARCHITECTURAL pastel series louvers and panels.pdf')">
+                                    <i class="fas fa-eye"></i>
+                                    Preview
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalogue-info">
+                        <div class="catalogue-category">Architectural</div>
+                        <h3>Mega Star Architectural - Pastel Series</h3>
+                        <p>Architectural laminates for louvers and panels featuring pastel color series. Perfect for modern architectural applications and exterior cladding.</p>
+                        <div class="catalogue-features">
+                            <span class="feature-tag">Architectural</span>
+                            <span class="feature-tag">Pastel Series</span>
+                            <span class="feature-tag">Louvers & Panels</span>
+                        </div>
+                        <div class="catalogue-actions">
+                            <a href="28.03.25_mega star_ ARCHITECTURAL pastel series louvers and panels.pdf" download class="download-btn">
+                                <i class="fas fa-download"></i>
+                                Download
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Technical Specifications -->
+                <div class="catalogue-card" data-aos="fade-up" data-aos-delay="600" data-category="technical">
+                    <div class="catalogue-preview">
+                        <div class="catalogue-thumbnail">
+                            <i class="fas fa-file-pdf"></i>
+                            <div class="catalogue-overlay">
+                                <button class="preview-btn" onclick="previewCatalogue('Technical-specs-Of PF-Grade.pdf')">
+                                    <i class="fas fa-eye"></i>
+                                    Preview
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalogue-info">
+                        <div class="catalogue-category">Technical Specs</div>
+                        <h3>PF Grade Technical Specifications</h3>
+                        <p>Detailed technical specifications for PF (Phenol Formaldehyde) grade laminates including physical properties, chemical resistance, and performance standards.</p>
+                        <div class="catalogue-features">
+                            <span class="feature-tag">PF Grade</span>
+                            <span class="feature-tag">Technical Specs</span>
+                        </div>
+                        <div class="catalogue-actions">
+                            <a href="Technical-specs-Of PF-Grade.pdf" download class="download-btn">
+                                <i class="fas fa-download"></i>
+                                Download
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Statistics Section -->
+    <section class="download-stats-section">
+        <div class="container">
+            <div class="stats-container" data-aos="fade-up">
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-download"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-number" data-count="5000">0</div>
+                        <div class="stat-label">Downloads This Month</div>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-number" data-count="12">0</div>
+                        <div class="stat-label">Available Catalogues</div>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="stat-content">
+                        <div class="stat-number" data-count="80">0</div>
+                        <div class="stat-label">Countries Served</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="catalogue-cta-section">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2>Need Help Choosing the Right Catalogue?</h2>
+                <p>Our expert team is here to help you find the perfect laminate solution for your project. Contact us for personalized recommendations.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="primary-btn">
+                        <span class="btn-text">Get Expert Advice</span>
+                        <span class="btn-icon">→</span>
+                    </a>
+                    <a href="tel:+919996083600" class="secondary-btn">
+                        <span class="btn-text">Call Now</span>
+                        <span class="btn-icon">📞</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section footer-about">
+                    <div class="footer-logo">
+                        <img src="IMG-20250125-WA0009-removebg-preview (1).png" alt="Dhananjaya Laminates Logo" class="footer-logo-img">
+                        <h3>Dhananjaya Laminates</h3>
+                    </div>
+                    <p>India's largest laminate manufacturer, trusted by 80+ nations worldwide for quality and innovation. Leading the global market with premium quality laminates and wood-based products.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/dhananjayaoverseas" target="_blank" rel="noopener noreferrer" title="Follow us on Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/doplindia" target="_blank" rel="noopener noreferrer" title="Follow us on Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/dhananjaya-overseas" target="_blank" rel="noopener noreferrer" title="Connect with us on LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://x.com/dhananjayavilla" target="_blank" rel="noopener noreferrer" title="Follow us on X (Twitter)">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="mdf.html">MDF</a></li>
+                        <li><a href="hdf.html">HDF</a></li>
+                        <li><a href="hdhwr.html">HDHWR</a></li>
+                        <li><a href="prelam.html">PRE LAM/MELAMINE</a></li>
+                        <li><a href="laminates.html">LAMINATES</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="catalogue.html">E-Catalogue</a></li>
+                        <li><a href="media-gallery.html">Media Gallery</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Dealer Locator</a></li>
+                        <li><a href="#">Visualizer</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Mission</a></li>
+                        <li><a href="#">Certifications</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section footer-contact">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Yamuna Nagar, Haryana, India</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 9996083600</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>dhananjayaoverseas@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 Dhananjaya Laminates. All rights reserved. | Made with ❤️ in India</p>
+                    <div class="footer-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- PDF Preview Modal -->
+    <div id="pdfModal" class="pdf-modal">
+        <div class="pdf-modal-content">
+            <div class="pdf-modal-header">
+                <h3 id="pdfModalTitle">Catalogue Preview</h3>
+                <button class="close-modal" onclick="closePdfModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="pdf-modal-body">
+                <iframe id="pdfViewer" src="" width="100%" height="600px"></iframe>
+            </div>
+            <div class="pdf-modal-footer">
+                <a id="pdfDownloadLink" href="" download class="download-btn">
+                    <i class="fas fa-download"></i>
+                    Download PDF
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out',
+            once: true,
+            mirror: false
+        });
+
+        // Search functionality
+        document.getElementById('catalogueSearch').addEventListener('input', function() {
+            const searchTerm = this.value.toLowerCase();
+            const catalogueCards = document.querySelectorAll('.catalogue-card');
+            
+            catalogueCards.forEach(card => {
+                const title = card.querySelector('h3').textContent.toLowerCase();
+                const description = card.querySelector('p').textContent.toLowerCase();
+                const category = card.querySelector('.catalogue-category').textContent.toLowerCase();
+                
+                if (title.includes(searchTerm) || description.includes(searchTerm) || category.includes(searchTerm)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+
+        // Filter functionality
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Remove active class from all buttons
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                // Add active class to clicked button
+                this.classList.add('active');
+                
+                const filter = this.getAttribute('data-filter');
+                const catalogueCards = document.querySelectorAll('.catalogue-card');
+                
+                catalogueCards.forEach(card => {
+                    if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Preview catalogue function
+        function previewCatalogue(pdfPath) {
+            const modal = document.getElementById('pdfModal');
+            const viewer = document.getElementById('pdfViewer');
+            const downloadLink = document.getElementById('pdfDownloadLink');
+            const title = document.getElementById('pdfModalTitle');
+            
+            title.textContent = pdfPath.replace('.pdf', '');
+            viewer.src = pdfPath;
+            downloadLink.href = pdfPath;
+            modal.style.display = 'block';
+        }
+
+        // Close modal function
+        function closePdfModal() {
+            document.getElementById('pdfModal').style.display = 'none';
+            document.getElementById('pdfViewer').src = '';
+        }
+
+        // Share catalogue function
+        function shareCatalogue(pdfPath) {
+            if (navigator.share) {
+                navigator.share({
+                    title: 'Dhananjaya Laminates Catalogue',
+                    text: 'Check out this amazing laminate catalogue from Dhananjaya Laminates',
+                    url: window.location.href
+                });
+            } else {
+                // Fallback: copy to clipboard
+                navigator.clipboard.writeText(window.location.href).then(() => {
+                    alert('Link copied to clipboard!');
+                });
+            }
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            const modal = document.getElementById('pdfModal');
+            if (event.target === modal) {
+                closePdfModal();
+            }
+        }
+
+        // Download tracking
+        document.querySelectorAll('.download-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const catalogueName = this.closest('.catalogue-card').querySelector('h3').textContent;
+                console.log(`Downloaded: ${catalogueName}`);
+                // Here you can add analytics tracking
+            });
+        });
+    </script>
+</body>
+</html>
